@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Blog Template · Tarea 1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+<main class="container">
+    <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark"  >Universidad De Las Fuerzas Armadas "ESPE"</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+         
+        </a>
+       
+      </div>
+    </div>
+  </header>
+
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">DOM HTML de JavaScript</h1>
+      <p class="lead my-3">Con HTML DOM, JavaScript puede acceder y cambiar todos los elementos de un documento HTML.</p>
+    </div>
+  </div>
+
+  
+
+  <div class="row g-5">
+    <div class="col-md-8">
+
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">El DOM HTML (modelo de objetos de documento)</h2>
+
+
+        <p>Cuando se carga una página web, el navegador crea una D documento, O Objeto y M Modelo de la página. <br>brEl modelo HTML DOM se construye como un árbol de objetos :</p>
+        <hr>
+        <p style="text-align: center;">El árbol de objetos HTML DOM <br><img src="./img/arbol.gif"></p>
+       
+        <h2>Con el modelo de objetos, JavaScript obtiene todo el poder que necesita para crear HTML dinámico:</h2>
+        <ul>
+          <li>JavaScript puede cambiar todos los elementos HTML de la página.</li>
+          <li>JavaScript puede cambiar todos los atributos HTML de la página.</li>
+          <li>JavaScript puede cambiar todos los estilos CSS de la página.</li>
+          <li>JavaScript puede eliminar elementos y atributos HTML existentes.</li>
+          <li>JavaScript puede agregar nuevos elementos y atributos HTML.</li>
+          <li>JavaScript puede reaccionar a todos los eventos HTML existentes en la página.</li>
+          <li>JavaScript puede crear nuevos eventos HTML en la página.</li>
+        </ul>
+        
+        <h3>¿Qué es el DOM?</h3>
+        <p>DOM es un estándar W3C (World Wide Web Consortium). <br><br>
+          El DOM define un estándar para acceder a los documentos: <br><br>
+          "El Modelo de Objetos de Documento (DOM) del W3C es una plataforma e interfaz de lenguaje neutro que permite a los programas y scripts acceder y actualizar dinámicamente el contenido, la estructura y el estilo de un documento". <br><br>
+          El estándar DOM de W3C se divide en 3 partes diferentes: <br>
+          <ul>
+            <li>Core DOM: modelo estándar para todos los tipos de documentos</li>
+          <li>XML DOM: modelo estándar para documentos XML</li>
+          <li>HTML DOM: modelo estándar para documentos HTML</li>
+        </ul>
+      </p>
+      <h3>¿Qué es el DOM HTML?</h3>
+        <p>HTML DOM es un modelo de objeto estándar y una interfaz de programación para HTML. Se define: br
+          <ul>
+            <li>Los elementos HTML como objetos</li>
+            <li>Las propiedades de todos los elementos HTML</li>
+            <li>Los métodos para acceder a todos los elementos HTML</li>
+            <li>Los eventos para todos los elementos HTML</li>
+          </ul><br>
+        En otras palabras: HTML DOM es un estándar sobre cómo obtener, cambiar, agregar o eliminar elementos HTML.</p>
+       
+       <h2 class="blog-post-title">JavaScript HTML DOM: cambio de HTML</h2>
+        <p>El DOM HTML permite que JavaScript cambie el contenido de los elementos HTML.</p>
+        
+        <h2>Cambio de contenido HTML</h2>
+        <p>La forma más sencilla de modificar el contenido de un elemento HTML es mediante la innerHTMLpropiedad. <br><br>Para cambiar el contenido de un elemento HTML, use esta sintaxis:
+          <i>document.getElementById(id).innerHTML = new HTML</i></p>
+          <p>El siguiente ejemplo cambia el contenido de un <i>'p'</i> elemento
+            <br><img src="./img/ej1.png"><br>
+            <ul>
+            <li>El documento HTML anterior contiene un 'p' elemento con id="p1"</li>
+            <li>Usamos el DOM HTML para obtener el elemento con id="p1"</li>
+            <li>Un JavaScript cambia el contenido ( innerHTML) de ese elemento a "¡Nuevo texto!"</li></ul></p>
+
+            <h2 class="blog-post-title">JavaScript HTML DOM: cambio de HTML</h2>
+        <p>El DOM HTML permite que JavaScript cambie el contenido de los elementos HTML.</p>
+        
+        <h2>Cambiar el valor de un atributo</h2>
+        <p>Para cambiar el valor de un atributo HTML, use esta sintaxis:
+          <i>document.getElementById(id).attribute = new value</i></p>
+          <p>El siguiente ejemplo cambia el valor del atributo src de un <i>'img'</i> elemento
+            <br><img src="./img/ej2.png"><br>
+            <ul>
+            <li>El documento HTML anterior contiene un 'img' elemento conid="myImage"</li>
+            <li>Usamos el DOM HTML para obtener el elemento con id="myImage"</li>
+            <li>Un JavaScript cambia el srcatributo de ese elemento de "smiley.gif" a "landscape.jpg".</li></ul></p>
+
+        <h2>Contenido HTML dinámico</h2>
+        <p>JavaScript puede crear contenido HTML dinámico:
+          <i>Date : Mon Dec 13 2021 23:21:06 GMT-0500 (hora de Ecuador)</i></p>
+          <p>Ejemplo:
+            <br><img src="./img/ej3.png"><br>
+        </p>
+
+        <h2>document.write ()</h2>
+        <p>En JavaScript, document.write()se puede utilizar para escribir directamente en el flujo de salida HTML:
+        </p>
+          <p>Ejemplo:
+            <br><img src="./img/ej4.png"><br>
+            No utilice nunca <i>document.write()</i> después de cargar el documento. Puesto que esto hara que lo sobreescriba.
+        </p>
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        JS HTML DOM
+      </h3>
+      
+      <article class="blog-post">
+        <!-- Comienzo parte elementos DOM-->
+        <h2 class="blog-post-title">Elementos DOM</h2>
+
+        <p>A continuación se van a dar técnicas para buscar y acceder a los elementos HTML de una página utilizando JavaScript</p>
+        <hr>
+        <p>Existen algunas maneras de hacerlo, puede ser mediante su ID, su nombre de etiqueta, su nombre de clase, mediante los distintos sectores del CSS o por medio de las colecciones de objetos HTML</p>
+        <dt>Encontrar elemento HTML mediante su ID</dt>
+        <p>Hay que tomar el ID que se desea mediante el getElementByID y para ponerlo en otra sección se pone el ID de la sección y se utiliza el innerHTML, este método devuelve el elemento como un objeto</p>
+        <p class="blog-post-meta">En este ejemplo se toma el ID 'ejemplo' para imprimirlo en la sección que se encuentra con el ID 'print'</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigoid.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidaid.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <hr>
+<dt>Encontrar elemento HTML mediante su etiqueta</dt>
+        <p>En este caso se toman los elementos que se encuentran dentro de las etiquetas ya sean <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> o cualquier otra mediante el getElementsByTagName</p>
+        <p class="blog-post-meta">En este ejemplo se toma el ID 'container' para encontrar los elementos dentro de esa sección para después imprimir uno de esos elementos pero eligiendolos por su etiqueta, en este caso se eligirá el elemento de la posición [1]</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigoet.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidaet.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+    <hr>
+<dt>Encontrar elemento HTML mediante su nombre de clase</dt>
+        <p>Tal y como los casos anterirores, este método sirve para encontrar los elementos pero esta vez mediante sus clases, esto se logra utilizando el getElementByClassName</p>
+        <p class="blog-post-meta">En este ejemplo se va a imprimir en la sección con ID 'print' el elemento que se encuentra en la clase 'ejemplo'</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigoclase.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidaclase.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+   <hr>
+<dt>Encontrar elemento HTML mediante selectores CSS</dt>
+        <p>Se utiliza el querySelectorAll cuando se quiere encontrar los elementos HTML que se encuentren en un selector CSS específico</p>
+        <p class="blog-post-meta">En este ejemplo se va a imprimir el elemento de la posición [2] de la lista de clase 'ejemplo'</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigocss.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidacss.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+     <hr>
+<dt>Encontrar elemento HTML mediante colecciones de objetos HTML</dt>
+        <p>Se utilizan las colecciones de los distintos objetos que se encuentran y que ofrece HTML</p>
+        <p class="blog-post-meta">En este ejemplo se va a imprimir los valores que se encuentran dentro de un formulario propio de HTML</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codigohtml.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidahtml.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<!-- Fin parte elementos DOM -->
+
+<!-- Comienzo parte DOM Metodos -->
+<h2 class="blog-post-title">Metodos DOM </h2>
+
+        <p>Los métodos son acciones que son realizables con los elementos de HTML</p>
+        <hr>
+        <p>Las propiedades de HTML DOM son valores de los elemenos de HTML, que se pueden cambiar o establecer.</p>
+<dt>Interfaz de programación DOM</dt>
+        <p>Es posible acceder al DOM HTML a partir de Javascript como en otros lenguajes de prgramación</p>
+        <ul>
+          <li>
+            <p>Los objetos son todos los elementos HTML</p>
+          </li>
+          <li>
+            <p>Las propiedades son valores que se establecen para cambiar el contenido de los elements HTML</p>
+          </li>
+          <li>Los métodos son acciones que se pueden realizar como agregar o eliminar elementos de HTML</li>
+
+        </ul>
+
+        <p class="blog-post-meta">En este ejemplo se cambia el contenido (the innerHTML) del <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> elemento con id="demo"
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+          
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/cambiaP.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/cambiaPsalida.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+        
+  </div>
+
+  <dt>El método getElementById</dt>
+        <p>Este es un métodod común para poder acceder a un elemento HTML utilizando el id del elemento </p>
+        <p>En el anterior ejemplo, el getElementById método utilizado id="demo" sirve para encontrar el elemento</p>
+
+<dt>La propiedad innerHTML</dt>
+        <p>Esta propiedad sirve para obtener el contenido de los elementos HTML </p>
+        <p>Se puede utilizar para obtener o cambiar cualquier elemento HTML, incluidos <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> y <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> </p>
+
+
+<!-- Fin parte DOM Metodos -->
+
+<!-- Comienzo parte DOM Componentes -->
+<h2 class="blog-post-title">Componentes DOM </h2>
+<p>Según el DOM, cada componente de un documento HTML es un nodo</p>
+<ul>
+  <li>Todo documento es un nodo de documento</li>
+  <li>Cada etiqueta HTML es un nodo de elemento</li>
+  <li>El texto contenido en el elemento HTML es un nodo de texto</li>
+  <li>Cada atributo HTML es un nodo de atributo</li>
+  <li>El comentario pertenece al nodo de comentario</li>
+</ul>
+<p>DOM define la estructura lógica de los documentos HTML y XML, a demás de proporcionar acceso y procesas estos dos documentos.</p>
+<p>Actualmente DOM esta compuesto por tres partes: Núcleo,Interfaz HTML, Interfaz XML</p>
+<div class="col-md-9">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+          
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/codComp.png" class="bd-placeholder-img" width="500" height="150" >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Visualización</strong>
+          <p class="card-text mb-auto">sí se ve en la página</p>
+          
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/salidacodComp.png" class="bd-placeholder-img" width="400" height="100" >
+        </div>
+      </div>
+    </div>
+
+<!-- Fin parte DOM Compnentes -->
+
+<!-- Comienzo parte DOM CSS -->
+<h2 class="blog-post-title">DOM CSS</h2>
+
+        <p>Con DOM se puede cambiar los estilos CSS de los elementos HTML mediante JavaScript</p>
+        <hr>
+
+        <h2>Sintaxis para cambiar estilo HTML</h2>
+        <blockquote class="blockquote">
+          <pre><code>document.getElementById("[id]").style.[propiedad]=[especificaciones]</code></pre>
+        </blockquote>
+        <p><strong>Nota: </strong><em>Lo que se encuentra en [   ] depende de cada caso y debe ser especificado por el usuario</em></p>
+
+        <p class="blog-post-meta">En este ejemplo se va a cambiar el estilo de un texto únicamente utilizando JavaScript</p>
+          <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Código</strong>
+          <p class="card-text mb-auto">Este es el código descrito</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/estilocodigo.png" class="bd-placeholder-img" width="350" height="250" >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-350 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Visualización</strong>
+          <p class="card-text mb-auto">Así se ve en la página</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="img/estilosalida.png" class="bd-placeholder-img" width="350" height="250" >
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<!-- Fin parte DOM CSS -->
+
+
+</article>
+
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">JS HTML DOM Básico</h4>
+          <p class="mb-0">Se presentan varias técnicas para trabajar con los elementos HTML utilizando JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="blog-footer">
+  <p>Universidad de las Fuerzas Armadas ESPE.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+
+    
+  </body>
+</html>
